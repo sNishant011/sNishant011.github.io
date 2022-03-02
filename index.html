@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Nishant Shrestha</title>
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1><a href="#">SN</a></h1>
+        <ul class="menu_contaienr">
+          <li class="link_container">
+            <a href="#" class="link">Home</a>
+            <span></span>
+          </li>
+          <li class="link_container">
+            <a href="#" class="link">About&nbsp;Me</a>
+            <span></span>
+          </li>
+          <li class="link_container">
+            <a href="#" class="link">My&nbsp;Works</a>
+            <span></span>
+          </li>
+          <li class="link_container">
+            <a href="#" class="link">Contact&nbsp;Me</a>
+            <span></span>
+          </li>
+          <button id="themeToggleBtn" onclick="toggleTheme()">Dark</button>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero_section">
+        <div class="information_container">
+          <h1>Hello!, My name is Nishant.</h1>
+          <p>
+            I am a passionate web developer, primarily focused on Frontend Web
+            Development. I can talk about HTML5, CSS3, SCSS, JavaScript, React
+            JS. I have experience with Restful API's too. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Ratione quia deleniti nostrum,
+            dolorum vel maiores amet tempore saepe temporibus! Corrupti
+            inventore, officiis possimus impedit culpa cum tempore sunt
+            temporibus iusto!
+          </p>
+          <a href="#my_works" onclick="focusElement('my_works')" class="link_btn">See my works</a>
+        </div>
+        <div class="hero_image_container">
+          <img src="./imgs/avataaars.svg" alt="My Avatar" />
+        </div>
+      </section>
+      <section id="about_me" class="about_me_container">
+        <h1>About Me</h1>
+        <p>
+          A wanna be hacker, ended up being a web developer!. My journey with
+          computer began with the interest of being a hacker. I got to know that
+          to be hacker you should know some programming languages, so, I started
+          grabbing fundamental concepts of coding by learning HTML, CSS and then
+          later python. I have been working on web development since then. By
+          surfing various website, I got fascinated by their amazing designs and
+          tried to replicated them. After digging into the technologies that
+          those websites use I forgot that my goal was to be a hacker xD.
+          Currently, I a web developer, with experience of JavaScript frameworks
+          and libraries. Felt boring? May be checkout
+          <a
+            class="p_link"
+            href="#my_skills"
+            onclick="focusElement('my_skills')"
+            >my skills</a
+          >
+          or may be
+          <a class="p_link" href="#my_works" onclick="focusElement('my_works')"
+            >my works</a
+          >.
+        </p>
+        <h2 id="my_skills">My Skills</h2>
+        <section class="skills_container">
+          <ul class="skill_set">
+            <li>
+              HTML5 <span><img src="./imgs/html5.svg" alt="html5 icon" /></span>
+            </li>
+            <li>
+              CSS3 <span><img src="./imgs/css3.svg" alt="css icon" /></span>
+            </li>
+            <li>
+              SCSS <span><img src="./imgs/scss.svg" alt="scss icon" /></span>
+            </li>
+            <li>
+              JavaScript
+              <span
+                ><img src="./imgs/javascript.svg" alt="javascript icon"
+              /></span>
+            </li>
+            <li>
+              Git & Github
+              <span><img src="./imgs/git.svg" alt="git icon" /></span>
+            </li>
+            <li>
+              React JS
+              <span><img src="./imgs/react.svg" alt="react js icon" /></span>
+            </li>
+            <li>
+              Next JS
+              <span><img src="./imgs/nextjs.svg" alt="next js icon" /></span>
+            </li>
+            <li>
+              Django
+              <span><img src="./imgs/django.svg" alt="django icon" /></span>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <section class="works_container">
+        <h1 id="my_works">My Works</h1>
+      </section>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -9,6 +9,7 @@ header {
   height: 70px;
   overflow: hidden;
   transition: all 200ms ease-in-out;
+  font-family: 'Fira Code', sans-serif;
   nav {
     max-width: 1500px;
     display: flex;
@@ -24,6 +25,7 @@ header {
     }
     h1 {
       a {
+        font-family: 'Fira Code', sans-serif;
         color: map-get($map: $dark_color, $key: text);
       }
     }
@@ -40,11 +42,13 @@ header {
         gap: 0.8rem;
       }
       li {
+        font-family: 'Fira Code', sans-serif;
         list-style: none;
 
         a {
           color: map-get($map: $dark_color, $key: text);
           width: 100%;
+          font-family: 'Fira Code', sans-serif;
         }
         span {
           position: absolute;

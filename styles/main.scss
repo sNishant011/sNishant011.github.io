@@ -1,11 +1,10 @@
 @import './vars';
-@import url(https://fonts.googleapis.com/css?family=Fira+Code:300,regular,500,600,700);
 * {
   position: relative;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Fira Code', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -55,16 +54,21 @@ main {
     padding: 0.5rem;
   }
   section {
-    padding: 2rem 1rem;
-
+    padding: 6rem 1rem;
+    // height: 90vh;
+    &.contact_container {
+      padding: 3rem 1rem;
+    }
     @include tablet {
       padding: 0.5rem 0;
       flex-direction: column-reverse;
     }
   }
+
   .hero_section {
     display: flex;
     gap: 1rem;
+    align-items: center;
     .information_container {
       display: flex;
       flex-direction: column;
@@ -138,16 +142,16 @@ main {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 2rem;
   }
-  button.card {
-    all: initial;
-    &:focus {
-      outline: 2px solid map-get($map: $light_color, $key: text);
-    }
-  }
   .card {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    box-shadow: -2px 2px 10px #ecebeb;
+    padding: 2rem;
+    border-radius: 6px;
+    @include mobile {
+      padding: 1rem;
+    }
     .project_title {
       color: map-get($map: $light_color, $key: accent);
     }
@@ -155,7 +159,7 @@ main {
       display: flex;
       flex-wrap: wrap;
       gap: 0.7rem;
-      margin-top: 1rem;
+      margin: 1rem 0;
       img,
       svg {
         height: 40px;
@@ -249,7 +253,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: sans-serif;
   font-size: 1rem;
   letter-spacing: 0.05rem;
   text-align: center;
@@ -298,6 +301,10 @@ footer {
   }
   .cards_container {
     .card {
+      box-shadow: -2px 2px 10px #0c0c0c;
+      .project_title {
+        color: map-get($map: $dark_color, $key: text);
+      }
       .tech_used {
         svg {
           path {

@@ -1,11 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Fira+Code:300,regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Fira+Code:300,regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 * {
   position: relative;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Fira Code', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 html {
@@ -66,6 +69,7 @@ header {
   overflow: hidden;
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
+  font-family: 'Fira Code', sans-serif;
 }
 
 header nav {
@@ -96,6 +100,7 @@ header nav {
 }
 
 header nav h1 a {
+  font-family: 'Fira Code', sans-serif;
   color: #fff;
 }
 
@@ -126,12 +131,14 @@ header nav ul {
 }
 
 header nav ul li {
+  font-family: 'Fira Code', sans-serif;
   list-style: none;
 }
 
 header nav ul li a {
   color: #fff;
   width: 100%;
+  font-family: 'Fira Code', sans-serif;
 }
 
 header nav ul li span {
@@ -196,7 +203,11 @@ main {
 }
 
 main section {
-  padding: 2rem 1rem;
+  padding: 6rem 1rem;
+}
+
+main section.contact_container {
+  padding: 3rem 1rem;
 }
 
 @media (max-width: 800px) {
@@ -214,6 +225,9 @@ main .hero_section {
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .hero_section .information_container {
@@ -326,14 +340,6 @@ main .hero_section .hero_image_container img {
   }
 }
 
-.cards_container button.card {
-  all: initial;
-}
-
-.cards_container button.card:focus {
-  outline: 2px solid #494949;
-}
-
 .cards_container .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -343,6 +349,16 @@ main .hero_section .hero_image_container img {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 0.5rem;
+  -webkit-box-shadow: -2px 2px 10px #ecebeb;
+          box-shadow: -2px 2px 10px #ecebeb;
+  padding: 2rem;
+  border-radius: 6px;
+}
+
+@media (max-width: 650px) {
+  .cards_container .card {
+    padding: 1rem;
+  }
 }
 
 .cards_container .card .project_title {
@@ -356,7 +372,7 @@ main .hero_section .hero_image_container img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 0.7rem;
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
 
 .cards_container .card .tech_used img,
@@ -495,7 +511,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: sans-serif;
   font-size: 1rem;
   letter-spacing: 0.05rem;
   text-align: center;
@@ -549,6 +564,15 @@ footer {
 }
 
 .dark .link_btn.secondary:hover {
+  color: #fff;
+}
+
+.dark .cards_container .card {
+  -webkit-box-shadow: -2px 2px 10px #0c0c0c;
+          box-shadow: -2px 2px 10px #0c0c0c;
+}
+
+.dark .cards_container .card .project_title {
   color: #fff;
 }
 

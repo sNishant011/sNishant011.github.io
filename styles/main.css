@@ -210,13 +210,9 @@ main section.contact_container {
   padding: 3rem 1rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   main section {
-    padding: 0.5rem 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    padding: 3rem 1rem;
   }
 }
 
@@ -228,6 +224,15 @@ main .hero_section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 800px) {
+  main .hero_section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 main .hero_section .information_container {
@@ -263,7 +268,7 @@ main .hero_section .hero_image_container {
 }
 
 main .hero_section .hero_image_container img {
-  width: 40%;
+  width: 50%;
 }
 
 @media (max-width: 800px) {
@@ -332,6 +337,13 @@ main .hero_section .hero_image_container img {
   grid-gap: 3rem;
 }
 
+@media (max-width: 800px) {
+  .cards_container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 650px) {
   .cards_container {
     -ms-grid-columns: (1fr)[1];
@@ -353,6 +365,13 @@ main .hero_section .hero_image_container img {
           box-shadow: -2px 2px 10px #ecebeb;
   padding: 2rem;
   border-radius: 6px;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.cards_container .card:hover {
+  -webkit-box-shadow: -2px 2px 20px #d3d3d3;
+          box-shadow: -2px 2px 20px #d3d3d3;
 }
 
 @media (max-width: 650px) {

@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Fira+Code:300,regular,500,600,700);
 * {
   position: relative;
   margin: 0;
@@ -6,6 +5,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Fira Code', sans-serif;
+  font-display: swap;
 }
 
 html {

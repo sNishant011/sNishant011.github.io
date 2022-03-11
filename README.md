@@ -4,6 +4,6 @@ Supposing that, I don't know UI design but I care about page load speed and acce
 
 # Built Using
 
--- Plain HTML5
--- SCSS
--- Vanilla JavaScript
+- Plain HTML5
+- SCSS
+- Vanilla JavaScript

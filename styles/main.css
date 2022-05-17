@@ -550,6 +550,66 @@ footer {
   }
 }
 
+.preloader {
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  z-index: 10;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#000000), to(#131313));
+  background-image: linear-gradient(to right, #000000 0%, #131313 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+  border: 4px dashed #fff;
+  -webkit-animation: preloader 2s ease-in-out infinite;
+          animation: preloader 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes preloader {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .dark {
   background-color: #242424;
   color: #b8b8b8;
@@ -629,63 +689,13 @@ footer {
   background-color: #000000;
 }
 
-.preloader {
-  -webkit-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
-  background-color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  z-index: 10;
+.dark .preloader {
+  background-color: #131313;
 }
 
-.box {
-  width: 50px;
-  height: 50px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#000000), to(#131313));
-  background-image: linear-gradient(to right, #000000 0%, #131313 100%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #fff;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 2rem;
-  border: 4px dashed #fff;
-  -webkit-animation: preloader 2s ease-in-out infinite;
-          animation: preloader 2s ease-in-out infinite;
-}
-
-@-webkit-keyframes preloader {
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes preloader {
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+.dark .box {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#fff2f2));
+  background-image: linear-gradient(to right, #ffffff 0%, #fff2f2 100%);
+  border: 4px dashed black;
 }
 /*# sourceMappingURL=main.css.map */

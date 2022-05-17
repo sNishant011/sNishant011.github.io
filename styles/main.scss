@@ -1,4 +1,5 @@
 @import './vars';
+
 * {
   position: relative;
   margin: 0;
@@ -7,9 +8,16 @@
   font-family: 'Nunito', sans-serif;
   font-display: swap;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
+#app {
+  transition: all 1.3s ease-in-out;
+  opacity: 0;
+}
+
 body {
   width: 100%;
   min-height: 60vh;
@@ -17,6 +25,7 @@ body {
   color: map-get($map: $light_color, $key: text);
   transition: background-color 200ms ease;
 }
+
 a {
   text-decoration: none;
 }
@@ -24,22 +33,27 @@ a {
 a,
 button {
   font-size: map-get($map: $text_size, $key: lg);
+
   @include tablet {
     font-size: map-get($map: $text_size, $key: md);
   }
+
   @include mobile {
     font-size: map-get($map: $text_size, $key: sm);
   }
+
   &:focus {
     text-decoration: underline;
   }
 }
+
 .link_btn,
 button {
   box-shadow: -5px 5px 30px rgba(128, 127, 127, 0.568);
 }
 
 @import './header';
+
 p {
   .p_link {
     font-size: inherit;
@@ -47,19 +61,24 @@ p {
     text-decoration: underline;
   }
 }
+
 main {
   max-width: 1500px;
   margin: auto;
   padding: 1rem;
+
   @include mobile {
     padding: 0.5rem;
   }
+
   section {
     padding: 6rem 1rem;
+
     // height: 90vh;
     &.contact_container {
       padding: 3rem 1rem;
     }
+
     @include mobile {
       padding: 3rem 1rem;
     }
@@ -69,27 +88,34 @@ main {
     display: flex;
     gap: 1rem;
     align-items: center;
+
     @include tablet {
       flex-direction: column-reverse;
     }
+
     .information_container {
       display: flex;
       flex-direction: column;
       width: 100%;
+
       h1 {
         margin: 1rem 0;
       }
+
       .btn_container {
         display: flex;
         gap: 2rem;
       }
     }
+
     .hero_image_container {
       width: 100%;
       display: flex;
       justify-content: center;
+
       img {
         width: 50%;
+
         @include tablet {
           width: 100%;
           height: 300px;
@@ -98,6 +124,7 @@ main {
     }
   }
 }
+
 .link_btn {
   margin-top: 1rem;
   background-color: map-get($map: $light_color, $key: accent);
@@ -106,16 +133,19 @@ main {
   cursor: pointer;
   border-radius: 3px;
   width: fit-content;
+
   &:focus {
     outline: 1px solid map-get($map: $light_color, $key: accent);
   }
 }
+
 .link_btn.secondary {
   background-color: transparent;
   color: map-get($light_color, accent);
   border: 1px solid map-get($map: $light_color, $key: accent);
   box-shadow: none;
   transition: all 200ms ease-in-out 100ms;
+
   &::before {
     content: '';
     height: 100%;
@@ -128,26 +158,32 @@ main {
     width: 0px;
     transition: all 200ms ease-in-out;
   }
+
   &:hover {
     &::before {
       transition: all 200ms ease-in-out;
       width: 100%;
     }
+
     color: map-get($map: $dark_color, $key: text);
   }
 }
+
 .cards_container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 1rem 0;
   grid-gap: 3rem;
+
   @include tablet {
     grid-template-columns: repeat(2, 1fr);
   }
+
   @include mobile {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 2rem;
   }
+
   .card {
     display: flex;
     flex-direction: column;
@@ -156,39 +192,48 @@ main {
     padding: 2rem;
     border-radius: 6px;
     transition: all 200ms ease-in-out;
+
     &:hover {
       box-shadow: -2px 2px 20px #d3d3d3;
     }
+
     @include mobile {
       padding: 1rem;
     }
+
     .project_title {
       color: map-get($map: $light_color, $key: accent);
     }
+
     .tech_used {
       display: flex;
       flex-wrap: wrap;
       gap: 0.7rem;
       margin: 1rem 0;
+
       img,
       svg {
         height: 40px;
         width: 40px;
       }
+
       svg {
         path {
           fill: #000;
         }
       }
     }
+
     a {
       border-radius: 5px;
       overflow: hidden;
       margin-top: auto;
+
       &::before {
         left: 0;
         top: 0;
       }
+
       @include mobile {
         margin-left: auto;
         margin-right: 1rem;
@@ -197,37 +242,46 @@ main {
     }
   }
 }
+
 h2 {
   margin-top: 1rem;
 }
+
 .skills_container {
   padding-top: 0.5rem;
+
   .skill_set {
     margin-top: 0.5rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 600px;
     gap: 1rem;
+
     li {
       list-style: none;
       display: flex;
       align-items: center;
       gap: 1rem;
+
       &::before {
         content: '--';
+
         @include mobile {
           content: '-';
         }
       }
+
       @include mobile {
         font-size: map-get($map: $text_size, $key: sm);
       }
+
       img,
       svg {
         width: 30px;
         height: 30px;
         object-fit: contain;
       }
+
       svg {
         path {
           fill: #000;
@@ -236,29 +290,36 @@ h2 {
     }
   }
 }
+
 h2 {
   transition: all 0.2s ease;
 }
+
 .focus {
   outline: 2px solid map-get($map: $light_color, $key: accent);
 }
+
 .icons_container {
   padding: 1rem;
   display: flex;
   align-items: center;
   gap: 1rem;
+
   a {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 }
+
 h1 {
   line-height: 2rem;
 }
+
 p {
   line-height: 1.6rem;
 }
+
 footer {
   display: flex;
   justify-content: center;
@@ -270,18 +331,22 @@ footer {
   padding: 1rem;
   color: map-get($map: $light_color, $key: primary);
   background-color: map-get($map: $light_color, $key: accent);
+
   @include mobile {
     padding: 0.5rem;
     font-size: 0.8rem;
     line-height: 1.5rem;
   }
 }
+
 .dark {
   background-color: map-get($map: $dark_color, $key: primary);
   color: map-get($map: $dark_color, $key: secondary);
+
   header {
     background-color: map-get($map: $dark_color, $key: accent);
   }
+
   .link_btn,
   button {
     box-shadow: -5px 5px 30px rgba(128, 127, 127, 0.568);
@@ -298,23 +363,29 @@ footer {
   .link_btn {
     background-color: map-get($map: $dark_color, $key: accent);
   }
+
   .link_btn.secondary {
     background-color: transparent;
     color: map-get($dark_color, secondary);
     border: 1px solid map-get($map: $dark_color, $key: secondary);
+
     &::before {
       background-color: map-get($map: $dark_color, $key: accent);
     }
+
     &:hover {
       color: map-get($map: $dark_color, $key: text);
     }
   }
+
   .cards_container {
     .card {
       box-shadow: -2px 2px 10px #0c0c0c;
+
       .project_title {
         color: map-get($map: $dark_color, $key: text);
       }
+
       .tech_used {
         svg {
           path {
@@ -322,8 +393,10 @@ footer {
           }
         }
       }
+
       a {
         box-shadow: none;
+
         &:hover,
         &:focus {
           box-shadow: -5px 5px 30px rgba(128, 127, 127, 0.568);
@@ -331,6 +404,7 @@ footer {
       }
     }
   }
+
   .skills_container {
     .skill_set {
       li {
@@ -342,6 +416,7 @@ footer {
       }
     }
   }
+
   .icons_container {
     a {
       svg {
@@ -351,11 +426,48 @@ footer {
       }
     }
   }
+
   .focus {
     outline: 2px solid map-get($map: $dark_color, $key: secondary);
   }
+
   footer {
     color: map-get($map: $light_color, $key: primary);
     background-color: map-get($map: $dark_color, $key: accent);
+  }
+}
+
+.preloader {
+  transition: all 0.8s ease-in-out;
+  background-color: #fff;
+  display: flex;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1);
+  z-index: 10;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  background-image: linear-gradient(to right, #000000 0%, #131313 100%);
+
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  border: 4px dashed #fff;
+  animation: preloader 2s ease-in-out infinite;
+}
+
+@keyframes preloader {
+  to {
+    transform: rotate(360deg);
   }
 }

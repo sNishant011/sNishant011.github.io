@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 * {
   position: relative;
   margin: 0;
@@ -72,7 +74,7 @@ header {
   overflow: hidden;
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
-  font-family: 'Fira Code', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 header nav {
@@ -103,7 +105,6 @@ header nav {
 }
 
 header nav h1 a {
-  font-family: 'Fira Code', sans-serif;
   color: #fff;
 }
 
@@ -141,7 +142,6 @@ header nav ul li {
 header nav ul li a {
   color: #fff;
   width: 100%;
-  font-family: 'Fira Code', sans-serif;
 }
 
 header nav ul li span {
@@ -331,6 +331,53 @@ main .hero_section .hero_image_container img {
   width: 100%;
 }
 
+.blogs_section .blogs_list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 800px) {
+  .blogs_section .blogs_list {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.blogs_section .blogs_list a {
+  all: initial;
+  color: inherit;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blogs_section .blogs_list a:focus {
+  outline: 2px solid #005dff;
+}
+
+.blogs_section .blogs_list a:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.278);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.278);
+}
+
+.blogs_section .blogs_list .blog h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.blogs_section .blogs_list .blog p {
+  margin-top: 0.3rem;
+  font-size: 1rem;
+}
+
 .cards_container {
   display: -ms-grid;
   display: grid;
@@ -410,7 +457,6 @@ main .hero_section .hero_image_container img {
 .cards_container .card a {
   border-radius: 5px;
   overflow: hidden;
-  margin-top: auto;
 }
 
 .cards_container .card a::before {
@@ -424,6 +470,10 @@ main .hero_section .hero_image_container img {
     margin-right: 1rem;
     margin-top: 0;
   }
+}
+
+.cards_container .card .tech_used {
+  margin-top: auto;
 }
 
 h2 {

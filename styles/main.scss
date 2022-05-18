@@ -169,6 +169,54 @@ main {
   }
 }
 
+.blogs_section {
+  .blogs_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+
+    @include tablet {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    a {
+      all: initial;
+      color: inherit;
+      cursor: pointer;
+
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+      &:focus {
+        outline: 2px solid map-get($map: $light_color, $key: accent);
+      }
+
+      &:hover {
+        transition: all 0.2s ease-in-out;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.278);
+
+      }
+
+    }
+
+    .blog {
+
+
+      h2 {
+        margin-top: 0;
+        font-size: 1.2rem;
+      }
+
+      p {
+        margin-top: 0.3rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
 .cards_container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -227,7 +275,7 @@ main {
     a {
       border-radius: 5px;
       overflow: hidden;
-      margin-top: auto;
+      // margin-top: auto;
 
       &::before {
         left: 0;
@@ -239,6 +287,10 @@ main {
         margin-right: 1rem;
         margin-top: 0;
       }
+    }
+
+    .tech_used {
+      margin-top: auto;
     }
   }
 }

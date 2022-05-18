@@ -9,7 +9,8 @@ header {
   height: 70px;
   overflow: hidden;
   transition: all 200ms ease-in-out;
-  font-family: 'Fira Code', sans-serif;
+  font-family: 'Nunito', sans-serif;
+
   nav {
     max-width: 1500px;
     display: flex;
@@ -18,29 +19,35 @@ header {
     margin: 0 auto;
     padding: 1rem 2rem;
     height: 100%;
+
     @include mobile {
       flex-direction: column;
       gap: 0;
       padding: 0.5rem 1rem;
     }
+
     h1 {
       a {
-        font-family: 'Fira Code', sans-serif;
+        // font-family: 'Fira Code', sans-serif;
         color: map-get($map: $dark_color, $key: text);
       }
     }
+
     ul {
       display: flex;
       gap: 2rem;
       margin-right: 2rem;
       align-items: center;
+
       @include tablet {
         gap: 1.5rem;
       }
+
       @include mobile {
         justify-content: space-evenly;
         gap: 0.8rem;
       }
+
       li {
         font-family: 'Fira Code', sans-serif;
         list-style: none;
@@ -48,8 +55,9 @@ header {
         a {
           color: map-get($map: $dark_color, $key: text);
           width: 100%;
-          font-family: 'Fira Code', sans-serif;
+          // font-family: 'Fira Code', sans-serif;
         }
+
         span {
           position: absolute;
           height: 2px;
@@ -60,6 +68,7 @@ header {
           background-color: map-get($map: $light_color, $key: primary);
           transition: all 200ms ease-in-out;
         }
+
         &:hover {
           span {
             width: 100%;
@@ -69,6 +78,7 @@ header {
     }
   }
 }
+
 .themeToggle {
   height: 30px;
   width: 30px;
@@ -79,16 +89,19 @@ header {
   position: absolute;
   right: 1rem;
 }
+
 .themeToggle.light {
   // animation: whitemode 1s ease-in-out 1;
   box-shadow: inset -12px 28px 0 1px gold;
 }
+
 .themeToggle.dark {
   background-color: map-get($map: $dark_color, $key: accent);
 
   // transform: translateX(0) rotate(80deg);
   box-shadow: inset 4px 4px 3px #000, inset -4px -4px 3px #ffffff;
 }
+
 .dark {
   header {
     background-color: map-get($map: $dark_color, $key: accent);

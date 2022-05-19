@@ -336,7 +336,7 @@ main .hero_section .hero_image_container img {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 2rem;
   margin-top: 1rem;
 }
 
@@ -355,6 +355,8 @@ main .hero_section .hero_image_container img {
   border-radius: 8px;
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .blogs_section .blogs_list a:focus {
@@ -362,10 +364,8 @@ main .hero_section .hero_image_container img {
 }
 
 .blogs_section .blogs_list a:hover {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.278);
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.278);
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.334);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.334);
 }
 
 .blogs_section .blogs_list .blog h2 {
@@ -376,6 +376,12 @@ main .hero_section .hero_image_container img {
 .blogs_section .blogs_list .blog p {
   margin-top: 0.3rem;
   font-size: 1rem;
+}
+
+section h1,
+section h2 {
+  color: #000000;
+  font-size: 1.7rem;
 }
 
 .cards_container {
@@ -726,8 +732,28 @@ footer {
   fill: #fff;
 }
 
+.dark .blogs_section .blogs_list .blog {
+  color: #f2f2f2;
+  -webkit-box-shadow: 0px 0px 15px #0c0c0cb2;
+          box-shadow: 0px 0px 15px #0c0c0cb2;
+}
+
+.dark .blogs_section .blogs_list .blog:hover {
+  -webkit-box-shadow: 0px 0px 25px #0c0c0c;
+          box-shadow: 0px 0px 25px #0c0c0c;
+}
+
+.dark .blogs_section .blogs_list .blog p {
+  color: #dcdcdc;
+}
+
 .dark .icons_container a svg path {
   fill: #fff;
+}
+
+.dark section h1,
+.dark section h2 {
+  color: #fff;
 }
 
 .dark .focus {

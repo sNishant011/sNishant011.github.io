@@ -170,10 +170,11 @@ main {
 }
 
 .blogs_section {
+
   .blogs_list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 2rem;
     margin-top: 1rem;
 
     @include tablet {
@@ -188,15 +189,14 @@ main {
       padding: 1rem;
       border-radius: 8px;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
 
       &:focus {
         outline: 2px solid map-get($map: $light_color, $key: accent);
       }
 
       &:hover {
-        transition: all 0.2s ease-in-out;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.278);
-
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.334);
       }
 
     }
@@ -216,6 +216,17 @@ main {
     }
   }
 }
+
+section {
+
+  h1,
+  h2 {
+    color: #000000;
+    font-size: 1.7rem;
+  }
+}
+
+
 
 .cards_container {
   display: grid;
@@ -505,6 +516,24 @@ footer {
     }
   }
 
+  .blogs_section {
+
+    .blogs_list {
+      .blog {
+        color: rgb(242, 242, 242);
+        box-shadow: 0px 0px 15px #0c0c0cb2;
+
+        &:hover {
+          box-shadow: 0px 0px 25px #0c0c0c;
+        }
+
+        p {
+          color: #dcdcdc
+        }
+      }
+    }
+  }
+
   .icons_container {
     a {
       svg {
@@ -512,6 +541,14 @@ footer {
           fill: #fff;
         }
       }
+    }
+  }
+
+  section {
+
+    h1,
+    h2 {
+      color: #fff;
     }
   }
 

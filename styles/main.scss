@@ -320,6 +320,10 @@ h2 {
     max-width: 600px;
     gap: 1rem;
 
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
     li {
       list-style: none;
       display: flex;
@@ -340,8 +344,8 @@ h2 {
 
       img,
       svg {
-        width: 30px;
-        height: 30px;
+        width: 70px;
+        height: 40px;
         object-fit: contain;
       }
 

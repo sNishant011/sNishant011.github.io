@@ -446,7 +446,7 @@ section h2 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 0.7rem;
+  gap: 1.7rem;
   margin: 1rem 0;
 }
 

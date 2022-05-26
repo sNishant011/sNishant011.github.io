@@ -22,7 +22,7 @@ fetch(`https://api.hashnode.com/`, {
 	const blogContainer = document.getElementById('blogs_container')
 	data.data.user.publication.posts.forEach(post => {
 		const wrapper_link = document.createElement('a')
-		wrapper_link.href = `https://devnishant.me/${post.slug}`
+		wrapper_link.href = `https://devnishant.hashnode.dev/${post.slug}`
 		wrapper_link.className = 'blog'
 		const title = document.createElement('h2')
 		title.innerText = post.title

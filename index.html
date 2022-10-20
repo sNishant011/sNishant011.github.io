@@ -1,284 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Nishant Shrestha</title>
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+    <meta
+      name="description"
+      content="Simple Accesible portfolio website of Nishant Shrestha."
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | Nishant Shrestha</title>
-  <link rel="stylesheet" type="text/css" href="./styles/main.css" />
-  <meta name="description" content="Simple Accesible portfolio website of Nishant Shrestha." />
-
-
-</head>
-
-<body>
-  <div class="preloader" id='preloader'>
-    <div class="box">
+  <body>
+    <div class="preloader" id="preloader">
+      <div class="box"></div>
+      <p>Getting Data Takes Time!</p>
     </div>
-    <p>Getting Data Takes Time!</p>
-  </div>
-  <div id='app'>
-
-
-    <header id="header">
-      <nav>
-        <h1><a href="#">SN</a></h1>
-        <ul class="menu_contaienr">
-          <li class="link_container">
-            <a href="#" class="link">Home</a>
-            <span></span>
-          </li>
-          <li class="link_container">
-            <a href="#about_me" onclick="focusElement('about_me')" class="link">About&nbsp;Me</a>
-            <span></span>
-          </li>
-          <li class="link_container">
-            <a href="#my_works" onclick="focusElement('my_works')" class="link">My&nbsp;Works</a>
-            <span></span>
-          </li>
-          <li class="link_container">
-            <a href="#contact" onclick="focusElement('contact') " class="link">Contact&nbsp;Me</a>
-            <span></span>
-          </li>
-        </ul>
-        <button id="themeToggleBtn" class="themeToggle light" onclick="toggleTheme()"
-          aria-label="toogle theme"></button>
-      </nav>
-    </header>
-    <main>
-      <section class="hero_section">
-        <div class="information_container">
-          <h1>Hello!, My name is Nishant.</h1>
-          <p>
-            I am a passionate web developer, primarily focused on Frontend Web
-            Development. I have a good experience with HTML5, CSS3, SCSS, JavaScript, TypeScript, React
-            JS, NextJS. I have experience with Restful API's and a bit knowledge on backend with django too.
-          </p>
-          <div class="btn_container">
-            <a href="#contact" onclick="focusElement('contact')" class="link_btn secondary">
-              Hire&nbsp;me
-            </a>
-            <a href="#my_works" onclick="focusElement('my_works')" class="link_btn">My&nbsp;works</a>
-          </div>
-        </div>
-        <div class="hero_image_container">
-          <img src="./imgs/avataaars.svg" alt="My Avatar" />
-        </div>
-      </section>
-      <section id="about_me" class="about_me_container">
-        <h1>About Me</h1>
-        <p>
-          A wanna be hacker, ended up being a web developer!. My journey with
-          computer began with the interest of being a hacker. I got to know that
-          to be hacker you should know some programming languages, so, I started
-          grabbing fundamental concepts of coding by learning HTML, CSS and then
-          later python. I have been working on web development since then. By
-          surfing various website, I got fascinated by their amazing designs and
-          tried to replicated them. After digging into the technologies that
-          those websites use I forgot that my goal was to be a hacker xD.
-          Currently, I a, web developer, with experience of JavaScript frameworks
-          and libraries like React, Next JS. Felt boring? Checkout
-          <a class="p_link" href="#my_skills" onclick="focusElement('my_skills')">my skills</a>
-          or may be
-          <a class="p_link" href="#my_works" onclick="focusElement('my_works')">my works</a>.
-        </p>
-        <section id="my_skills" class="skills_container">
-          <h2>My Skills</h2>
-          <ul class="skill_set">
-            <li>
-              HTML5 <span><img src="./imgs/html5.svg" alt="html5 icon" /></span>
+    <div id="app">
+      <header id="header">
+        <nav>
+          <h1><a href="#">SN</a></h1>
+          <ul class="menu_contaienr">
+            <li class="link_container">
+              <a href="#" class="link">Home</a>
+              <span></span>
             </li>
-            <li>
-              CSS3 <span><img src="./imgs/css3.svg" alt="css icon" /></span>
+            <li class="link_container">
+              <a
+                href="#about_me"
+                onclick="focusElement('about_me')"
+                class="link"
+                >About&nbsp;Me</a
+              >
+              <span></span>
             </li>
-            <li>
-              SCSS <span><img src="./imgs/scss.svg" alt="scss icon" /></span>
+            <li class="link_container">
+              <a
+                href="#my_works"
+                onclick="focusElement('my_works')"
+                class="link"
+                >My&nbsp;Works</a
+              >
+              <span></span>
             </li>
-            <li>
-              JavaScript
-              <span><img src="./imgs/javascript.svg" alt="javascript icon" /></span>
-            </li>
-            <li>
-              Git&nbsp;&&nbsp;Github
-              <span><img src="./imgs/git.svg" alt="git icon" /></span>
-            </li>
-            <li>
-              React JS
-              <span><img src="./imgs/react.svg" alt="react js icon" /></span>
-            </li>
-            <li>
-              Next JS
-              <span><svg width="68" height="41" viewBox="0 0 68 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M16.0451 10.6893H28.8705V11.7078H17.2207V19.3727H28.1759V20.3911H17.2207V28.8064H29.0041V29.8248H16.0451V10.6893ZM30.0196 10.6893H31.3823L37.4209 19.1047L43.593 10.6892L51.9883 0L38.1957 19.9892L45.3031 29.8248H43.887L37.4209 20.8735L30.9279 29.8248H29.5386L36.6994 19.989L30.0195 10.6893H30.0196ZM45.8108 11.7078V10.6892H60.4265V11.7077H53.693V29.8246H52.5174V11.7078H45.8108V11.7078ZM0 10.6892H1.46957L21.7341 40.9845L13.3599 29.8246L1.22905 12.1365L1.17566 29.8249H0V10.6892ZM60.308 28.4988C60.0678 28.4988 59.8877 28.3131 59.8877 28.0727C59.8877 27.8325 60.0678 27.6465 60.308 27.6465C60.5511 27.6465 60.7284 27.8324 60.7284 28.0727C60.7284 28.313 60.5511 28.4988 60.308 28.4988ZM61.4632 27.3776H62.0924C62.1009 27.718 62.3496 27.9469 62.7157 27.9469C63.1246 27.9469 63.3562 27.7009 63.3562 27.2403V24.3226H63.9968V27.2431C63.9968 28.0727 63.5164 28.5505 62.7214 28.5505C61.975 28.5505 61.4632 28.087 61.4632 27.3775V27.3776ZM64.8345 27.3405H65.4694C65.5237 27.7323 65.9069 27.9811 66.4588 27.9811C66.9735 27.9811 67.3509 27.7151 67.3509 27.349C67.3509 27.0344 67.1107 26.8456 66.5646 26.7169L66.0326 26.5882C65.2862 26.4136 64.9461 26.0532 64.9461 25.4468C64.9461 24.7117 65.5466 24.2225 66.4473 24.2225C67.2851 24.2225 67.8971 24.7116 67.9343 25.4067H67.3108C67.2508 25.0263 66.919 24.7888 66.4387 24.7888C65.9326 24.7888 65.5953 25.032 65.5953 25.4038C65.5953 25.6984 65.8124 25.8673 66.3501 25.9931L66.8047 26.1047C67.6511 26.3021 68 26.6454 68 27.2661C68 28.0555 67.3881 28.5505 66.4102 28.5505C65.4952 28.5505 64.8802 28.0784 64.8345 27.3404V27.3405Z" />
-                </svg></span>
-            </li>
-            <li>
-              TypeScript
-              <span>
-                <img src='./imgs/typescript.svg' alt='typescript icon' />
-              </span>
-            </li>
-            <li>
-              Mantine UI
-              <span>
-                <img src='./imgs/mantine_ui.png' alt='mantine ui icon' />
-              </span>
-            </li>
-            <li>
-              Chakra UI
-              <span>
-                <img src='./imgs/chakra.svg' alt='chakra ui icon' />
-              </span>
-            </li>
-            <li>
-              Python
-              <span>
-                <img src='./imgs/python.svg' />
-              </span>
-            </li>
-
-            <li>
-              Django
-              <span><img src="./imgs/django.svg" alt="django icon" /></span>
+            <li class="link_container">
+              <a href="#contact" onclick="focusElement('contact') " class="link"
+                >Contact&nbsp;Me</a
+              >
+              <span></span>
             </li>
           </ul>
+          <button
+            id="themeToggleBtn"
+            class="themeToggle light"
+            onclick="toggleTheme()"
+            aria-label="toogle theme"
+          ></button>
+        </nav>
+      </header>
+      <main>
+        <section class="hero_section">
+          <div class="information_container">
+            <h1>Hello!, My name is Nishant.</h1>
+            <p>
+              I am a passionate web developer, primarily focused on Frontend Web
+              Development. I have a good experience with HTML5, CSS3, SCSS,
+              JavaScript, TypeScript, React JS, NextJS. I have experience with
+              Restful API's and a bit knowledge on backend with django too.
+            </p>
+            <div class="btn_container">
+              <a
+                href="#contact"
+                onclick="focusElement('contact')"
+                class="link_btn secondary"
+              >
+                Hire&nbsp;me
+              </a>
+              <a
+                href="#my_works"
+                onclick="focusElement('my_works')"
+                class="link_btn"
+                >My&nbsp;works</a
+              >
+            </div>
+          </div>
+          <div class="hero_image_container">
+            <img src="./imgs/avataaars.svg" alt="My Avatar" />
+          </div>
         </section>
-      </section>
-      <section id="my_works" class="works_container">
-        <h1>My Works</h1>
-        <div class="cards_container">
-          <div class="card">
-            <h1 class="project_title">News and Stock Market Portal</h1>
-            <p class="project_description">
-              This project is a closed source project. It is a news portal backed with stock market data which
-              includes data visualization in chart, mostly in tables. Made CRUD operations for News and Advertisement
-              Placeholder. React table and chart js was used for data visualization.
-            </p>
-            <div class="tech_used">
-              <svg width="68" height="41" viewBox="0 0 68 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <section id="about_me" class="about_me_container">
+          <h1>About Me</h1>
+          <p>
+            A wanna be hacker, ended up being a web developer!. My journey with
+            computer began with the interest of being a hacker. I got to know
+            that to be hacker you should know some programming languages, so, I
+            started grabbing fundamental concepts of coding by learning HTML,
+            CSS and then later python. I have been working on web development
+            since then. By surfing various website, I got fascinated by their
+            amazing designs and tried to replicated them. After digging into the
+            technologies that those websites use I forgot that my goal was to be
+            a hacker xD. Currently, I a, web developer, with experience of
+            JavaScript frameworks and libraries like React, Next JS. Felt
+            boring? Checkout
+            <a
+              class="p_link"
+              href="#my_skills"
+              onclick="focusElement('my_skills')"
+              >my skills</a
+            >
+            or may be
+            <a
+              class="p_link"
+              href="#my_works"
+              onclick="focusElement('my_works')"
+              >my works</a
+            >.
+          </p>
+          <section id="my_skills" class="skills_container">
+            <h2>My Skills</h2>
+            <ul class="skill_set">
+              <li data-aos="zoom-in">
+                HTML5
+                <span><img src="./imgs/html5.svg" alt="html5 icon" /></span>
+              </li>
+              <li>
+                CSS3 <span><img src="./imgs/css3.svg" alt="css icon" /></span>
+              </li>
+              <li>
+                SCSS <span><img src="./imgs/scss.svg" alt="scss icon" /></span>
+              </li>
+              <li>
+                JavaScript
+                <span
+                  ><img src="./imgs/javascript.svg" alt="javascript icon"
+                /></span>
+              </li>
+              <li>
+                Git&nbsp;&&nbsp;Github
+                <span><img src="./imgs/git.svg" alt="git icon" /></span>
+              </li>
+              <li>
+                React JS
+                <span><img src="./imgs/react.svg" alt="react js icon" /></span>
+              </li>
+              <li>
+                Next JS
+                <span
+                  ><svg
+                    width="68"
+                    height="41"
+                    viewBox="0 0 68 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.0451 10.6893H28.8705V11.7078H17.2207V19.3727H28.1759V20.3911H17.2207V28.8064H29.0041V29.8248H16.0451V10.6893ZM30.0196 10.6893H31.3823L37.4209 19.1047L43.593 10.6892L51.9883 0L38.1957 19.9892L45.3031 29.8248H43.887L37.4209 20.8735L30.9279 29.8248H29.5386L36.6994 19.989L30.0195 10.6893H30.0196ZM45.8108 11.7078V10.6892H60.4265V11.7077H53.693V29.8246H52.5174V11.7078H45.8108V11.7078ZM0 10.6892H1.46957L21.7341 40.9845L13.3599 29.8246L1.22905 12.1365L1.17566 29.8249H0V10.6892ZM60.308 28.4988C60.0678 28.4988 59.8877 28.3131 59.8877 28.0727C59.8877 27.8325 60.0678 27.6465 60.308 27.6465C60.5511 27.6465 60.7284 27.8324 60.7284 28.0727C60.7284 28.313 60.5511 28.4988 60.308 28.4988ZM61.4632 27.3776H62.0924C62.1009 27.718 62.3496 27.9469 62.7157 27.9469C63.1246 27.9469 63.3562 27.7009 63.3562 27.2403V24.3226H63.9968V27.2431C63.9968 28.0727 63.5164 28.5505 62.7214 28.5505C61.975 28.5505 61.4632 28.087 61.4632 27.3775V27.3776ZM64.8345 27.3405H65.4694C65.5237 27.7323 65.9069 27.9811 66.4588 27.9811C66.9735 27.9811 67.3509 27.7151 67.3509 27.349C67.3509 27.0344 67.1107 26.8456 66.5646 26.7169L66.0326 26.5882C65.2862 26.4136 64.9461 26.0532 64.9461 25.4468C64.9461 24.7117 65.5466 24.2225 66.4473 24.2225C67.2851 24.2225 67.8971 24.7116 67.9343 25.4067H67.3108C67.2508 25.0263 66.919 24.7888 66.4387 24.7888C65.9326 24.7888 65.5953 25.032 65.5953 25.4038C65.5953 25.6984 65.8124 25.8673 66.3501 25.9931L66.8047 26.1047C67.6511 26.3021 68 26.6454 68 27.2661C68 28.0555 67.3881 28.5505 66.4102 28.5505C65.4952 28.5505 64.8802 28.0784 64.8345 27.3404V27.3405Z"
+                    /></svg
+                ></span>
+              </li>
+              <li>
+                TypeScript
+                <span>
+                  <img src="./imgs/typescript.svg" alt="typescript icon" />
+                </span>
+              </li>
+              <li>
+                Mantine UI
+                <span>
+                  <img src="./imgs/mantine_ui.png" alt="mantine ui icon" />
+                </span>
+              </li>
+              <li>
+                Chakra UI
+                <span>
+                  <img src="./imgs/chakra.svg" alt="chakra ui icon" />
+                </span>
+              </li>
+              <li>
+                Python
+                <span>
+                  <img src="./imgs/python.svg" />
+                </span>
+              </li>
+
+              <li>
+                Django
+                <span><img src="./imgs/django.svg" alt="django icon" /></span>
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section id="my_works" class="works_container">
+          <h1>My Works</h1>
+          <div class="cards_container">
+            <div class="card">
+              <h1 class="project_title">News and Stock Market Portal</h1>
+              <p class="project_description">
+                This project is a closed source project. It is a news portal
+                backed with stock market data which includes data visualization
+                in chart, mostly in tables. Made CRUD operations for News and
+                Advertisement Placeholder. React table and chart js was used for
+                data visualization.
+              </p>
+              <div class="tech_used">
+                <svg
+                  width="68"
+                  height="41"
+                  viewBox="0 0 68 41"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.0451 10.6893H28.8705V11.7078H17.2207V19.3727H28.1759V20.3911H17.2207V28.8064H29.0041V29.8248H16.0451V10.6893ZM30.0196 10.6893H31.3823L37.4209 19.1047L43.593 10.6892L51.9883 0L38.1957 19.9892L45.3031 29.8248H43.887L37.4209 20.8735L30.9279 29.8248H29.5386L36.6994 19.989L30.0195 10.6893H30.0196ZM45.8108 11.7078V10.6892H60.4265V11.7077H53.693V29.8246H52.5174V11.7078H45.8108V11.7078ZM0 10.6892H1.46957L21.7341 40.9845L13.3599 29.8246L1.22905 12.1365L1.17566 29.8249H0V10.6892ZM60.308 28.4988C60.0678 28.4988 59.8877 28.3131 59.8877 28.0727C59.8877 27.8325 60.0678 27.6465 60.308 27.6465C60.5511 27.6465 60.7284 27.8324 60.7284 28.0727C60.7284 28.313 60.5511 28.4988 60.308 28.4988ZM61.4632 27.3776H62.0924C62.1009 27.718 62.3496 27.9469 62.7157 27.9469C63.1246 27.9469 63.3562 27.7009 63.3562 27.2403V24.3226H63.9968V27.2431C63.9968 28.0727 63.5164 28.5505 62.7214 28.5505C61.975 28.5505 61.4632 28.087 61.4632 27.3775V27.3776ZM64.8345 27.3405H65.4694C65.5237 27.7323 65.9069 27.9811 66.4588 27.9811C66.9735 27.9811 67.3509 27.7151 67.3509 27.349C67.3509 27.0344 67.1107 26.8456 66.5646 26.7169L66.0326 26.5882C65.2862 26.4136 64.9461 26.0532 64.9461 25.4468C64.9461 24.7117 65.5466 24.2225 66.4473 24.2225C67.2851 24.2225 67.8971 24.7116 67.9343 25.4067H67.3108C67.2508 25.0263 66.919 24.7888 66.4387 24.7888C65.9326 24.7888 65.5953 25.032 65.5953 25.4038C65.5953 25.6984 65.8124 25.8673 66.3501 25.9931L66.8047 26.1047C67.6511 26.3021 68 26.6454 68 27.2661C68 28.0555 67.3881 28.5505 66.4102 28.5505C65.4952 28.5505 64.8802 28.0784 64.8345 27.3404V27.3405Z"
+                  />
+                </svg>
+                <img
+                  src="./imgs/chakra.svg"
+                  style="width: 60px"
+                  alt="chakra ui icon"
+                />
+                <img
+                  src="./imgs/react-table.svg"
+                  style="width: 70px"
+                  alt="react table icon"
+                />
+                <img src="./imgs/chartjs.svg" alt="Chart JS icon" />
+              </div>
+              <a
+                href="https://beta-businessdabali.netlify.app"
+                class="link_btn secondary"
+                target="blank"
+                >View Live</a
+              >
+            </div>
+            <div class="card">
+              <h1 class="project_title">CodeN</h1>
+              <p class="project_description">
+                This project is a course containing webapp. This was made to
+                test my skills with react js and next js. I designed this in the
+                figma first and then made some static JSON data for the courses.
+                I used api from nytimes to get some books data.
+              </p>
+              <div class="tech_used">
+                <svg
+                  width="68"
+                  height="41"
+                  viewBox="0 0 68 41"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.0451 10.6893H28.8705V11.7078H17.2207V19.3727H28.1759V20.3911H17.2207V28.8064H29.0041V29.8248H16.0451V10.6893ZM30.0196 10.6893H31.3823L37.4209 19.1047L43.593 10.6892L51.9883 0L38.1957 19.9892L45.3031 29.8248H43.887L37.4209 20.8735L30.9279 29.8248H29.5386L36.6994 19.989L30.0195 10.6893H30.0196ZM45.8108 11.7078V10.6892H60.4265V11.7077H53.693V29.8246H52.5174V11.7078H45.8108V11.7078ZM0 10.6892H1.46957L21.7341 40.9845L13.3599 29.8246L1.22905 12.1365L1.17566 29.8249H0V10.6892ZM60.308 28.4988C60.0678 28.4988 59.8877 28.3131 59.8877 28.0727C59.8877 27.8325 60.0678 27.6465 60.308 27.6465C60.5511 27.6465 60.7284 27.8324 60.7284 28.0727C60.7284 28.313 60.5511 28.4988 60.308 28.4988ZM61.4632 27.3776H62.0924C62.1009 27.718 62.3496 27.9469 62.7157 27.9469C63.1246 27.9469 63.3562 27.7009 63.3562 27.2403V24.3226H63.9968V27.2431C63.9968 28.0727 63.5164 28.5505 62.7214 28.5505C61.975 28.5505 61.4632 28.087 61.4632 27.3775V27.3776ZM64.8345 27.3405H65.4694C65.5237 27.7323 65.9069 27.9811 66.4588 27.9811C66.9735 27.9811 67.3509 27.7151 67.3509 27.349C67.3509 27.0344 67.1107 26.8456 66.5646 26.7169L66.0326 26.5882C65.2862 26.4136 64.9461 26.0532 64.9461 25.4468C64.9461 24.7117 65.5466 24.2225 66.4473 24.2225C67.2851 24.2225 67.8971 24.7116 67.9343 25.4067H67.3108C67.2508 25.0263 66.919 24.7888 66.4387 24.7888C65.9326 24.7888 65.5953 25.032 65.5953 25.4038C65.5953 25.6984 65.8124 25.8673 66.3501 25.9931L66.8047 26.1047C67.6511 26.3021 68 26.6454 68 27.2661C68 28.0555 67.3881 28.5505 66.4102 28.5505C65.4952 28.5505 64.8802 28.0784 64.8345 27.3404V27.3405Z"
+                  />
+                </svg>
+                <img src="./imgs/scss.svg" alt="scss icon" />
+              </div>
+              <a
+                target="blank"
+                href="https://coden.netlify.app"
+                class="link_btn secondary"
+                >View Live</a
+              >
+            </div>
+
+            <div class="card">
+              <h1 class="project_title">Portfolio Website</h1>
+              <p class="project_description">
+                A closed source project made for video grapher. It was a simple
+                and good looking dark themed SPA which had swipers and
+                animation. Swiper JS was used by customizing it and framer
+                motion was used for animating routes.
+              </p>
+              <div class="tech_used">
+                <img src="./imgs/react.svg" alt="nextjs icon" />
+                <svg
+                  xmlns="http:www.w3.org/2000/svg"
+                  viewBox="0 0 14 21"
+                  role="presentation"
+                >
+                  <path
+                    d="M0 0h14v7H7zm0 7h7l7 7H7v7l-7-7z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                <img src="./imgs/swiperjs.svg" alt="swiper js icon" />
+                <img src="./imgs/scss.svg" alt="scss icon" />
+              </div>
+            </div>
+            <div class="card">
+              <h1 class="project_title">Open Lottie</h1>
+              <p class="project_description">
+                Made this project, just to try out some cool looking animations.
+                Learned to use lottie files and handle the events.
+              </p>
+              <div class="tech_used">
+                <img src="./imgs/react.svg" alt="nextjs icon" />
+                <img src="./imgs/scss.svg" alt="scss icon" />
+              </div>
+              <a
+                href="https://openlottie.netlify.app/"
+                class="link_btn secondary"
+                target="blank"
+                >View Live</a
+              >
+            </div>
+            <div class="card">
+              <h1 class="project_title">Vanilla Form</h1>
+              <p class="project_description">
+                I wanted to make a form validation without using any libraries.
+                Hopefully, I guess I acheived it.
+              </p>
+              <div class="tech_used">
+                <img src="./imgs/javascript.svg" alt="nextjs icon" />
+                <img src="./imgs/html5.svg" alt="html5 icon" />
+                <img src="./imgs/scss.svg" alt="scss icon" />
+              </div>
+              <a
+                href="https://snishant011.github.io/form/"
+                class="link_btn secondary"
+                target="blank"
+                >View Live</a
+              >
+            </div>
+            <div class="card">
+              <h1 class="project_title">Tour Management System Admin App</h1>
+              <p class="project_description">
+                This Admin app was made as a part of my college project where I
+                had to make a tour and travel website.
+              </p>
+              <div class="tech_used">
+                <img src="./imgs/react.svg" alt="react icon" />
+                <img src="./imgs/typescript.svg" alt="typescript icon" />
+                <img src="./imgs/mantine_ui.png" alt="mantine_ui" />
+              </div>
+              <a
+                href="https://github.com/snishant011/TMS_Admin_App"
+                target="_blank"
+                class="link_btn secondary"
+                >View Source</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section class="blogs_section">
+          <h1>Some of my writings</h1>
+          <div class="blogs_list" id="blogs_container"></div>
+        </section>
+
+        <section id="contact" class="contact_container">
+          <h1>Contact Me</h1>
+          <div class="icons_container">
+            <a
+              href="https://www.facebook.com/srestn011"
+              aria-label="find me on facebook"
+              target="blank"
+            >
+              <img src="./imgs/facebook.svg" alt="facebook icon" />
+            </a>
+            <a
+              href="https://www.instagram.com/srest.nishant/"
+              aria-label="find me on instagram"
+              target="blank"
+            >
+              <svg
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
-                  d="M16.0451 10.6893H28.8705V11.7078H17.2207V19.3727H28.1759V20.3911H17.2207V28.8064H29.0041V29.8248H16.0451V10.6893ZM30.0196 10.6893H31.3823L37.4209 19.1047L43.593 10.6892L51.9883 0L38.1957 19.9892L45.3031 29.8248H43.887L37.4209 20.8735L30.9279 29.8248H29.5386L36.6994 19.989L30.0195 10.6893H30.0196ZM45.8108 11.7078V10.6892H60.4265V11.7077H53.693V29.8246H52.5174V11.7078H45.8108V11.7078ZM0 10.6892H1.46957L21.7341 40.9845L13.3599 29.8246L1.22905 12.1365L1.17566 29.8249H0V10.6892ZM60.308 28.4988C60.0678 28.4988 59.8877 28.3131 59.8877 28.0727C59.8877 27.8325 60.0678 27.6465 60.308 27.6465C60.5511 27.6465 60.7284 27.8324 60.7284 28.0727C60.7284 28.313 60.5511 28.4988 60.308 28.4988ZM61.4632 27.3776H62.0924C62.1009 27.718 62.3496 27.9469 62.7157 27.9469C63.1246 27.9469 63.3562 27.7009 63.3562 27.2403V24.3226H63.9968V27.2431C63.9968 28.0727 63.5164 28.5505 62.7214 28.5505C61.975 28.5505 61.4632 28.087 61.4632 27.3775V27.3776ZM64.8345 27.3405H65.4694C65.5237 27.7323 65.9069 27.9811 66.4588 27.9811C66.9735 27.9811 67.3509 27.7151 67.3509 27.349C67.3509 27.0344 67.1107 26.8456 66.5646 26.7169L66.0326 26.5882C65.2862 26.4136 64.9461 26.0532 64.9461 25.4468C64.9461 24.7117 65.5466 24.2225 66.4473 24.2225C67.2851 24.2225 67.8971 24.7116 67.9343 25.4067H67.3108C67.2508 25.0263 66.919 24.7888 66.4387 24.7888C65.9326 24.7888 65.5953 25.032 65.5953 25.4038C65.5953 25.6984 65.8124 25.8673 66.3501 25.9931L66.8047 26.1047C67.6511 26.3021 68 26.6454 68 27.2661C68 28.0555 67.3881 28.5505 66.4102 28.5505C65.4952 28.5505 64.8802 28.0784 64.8345 27.3404V27.3405Z" />
-              </svg>
-              <img src="./imgs/chakra.svg" style='width:60px' alt="chakra ui icon" />
-              <img src="./imgs/react-table.svg" style='width:70px ;' alt="react table icon" />
-              <img src="./imgs/chartjs.svg" alt="Chart JS icon" />
-            </div>
-          </div>
-          <div class="card">
-            <h1 class="project_title">CodeN</h1>
-            <p class="project_description">
-              This project is a course containing webapp. This was made to test
-              my skills with react js and next js. I designed this in the figma
-              first and then made some static JSON data for the courses. I used
-              api from nytimes to get some books data.
-            </p>
-            <div class="tech_used">
-              <svg width="68" height="41" viewBox="0 0 68 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  d="M18.4166 14.0767C17.5583 14.0767 16.7192 14.3313 16.0055 14.8082C15.2917 15.2851 14.7355 15.9629 14.407 16.7559C14.0785 17.5489 13.9926 18.4216 14.16 19.2634C14.3275 20.1053 14.7408 20.8786 15.3478 21.4856C15.9547 22.0926 16.7281 22.5059 17.5699 22.6734C18.4118 22.8408 19.2844 22.7549 20.0775 22.4264C20.8705 22.0979 21.5483 21.5416 22.0252 20.8279C22.5021 20.1142 22.7566 19.2751 22.7566 18.4167C22.7566 17.8468 22.6444 17.2825 22.4263 16.7559C22.2082 16.2293 21.8885 15.7509 21.4855 15.3479C21.0825 14.9449 20.604 14.6252 20.0775 14.4071C19.5509 14.189 18.9866 14.0767 18.4166 14.0767V14.0767ZM35.7941 9.78925C35.7849 8.43782 35.5361 7.09875 35.0591 5.83425C34.7079 4.90895 34.1644 4.06866 33.4646 3.36882C32.7647 2.66898 31.9244 2.1255 30.9991 1.77425C29.7346 1.29731 28.3956 1.04845 27.0441 1.03925C24.7866 0.916748 24.1216 0.916748 18.4166 0.916748C12.7116 0.916748 12.0466 0.916748 9.78913 1.03925C8.4377 1.04845 7.09863 1.29731 5.83413 1.77425C4.90883 2.1255 4.06854 2.66898 3.3687 3.36882C2.66886 4.06866 2.12538 4.90895 1.77413 5.83425C1.29719 7.09875 1.04833 8.43782 1.03913 9.78925C0.916626 12.0467 0.916626 12.7117 0.916626 18.4167C0.916626 24.1217 0.916626 24.7867 1.03913 27.0442C1.05796 28.4004 1.30648 29.7436 1.77413 31.0167C2.12383 31.9378 2.66685 32.7732 3.36663 33.4667C4.06346 34.1708 4.90556 34.7143 5.83413 35.0592C7.09863 35.5362 8.4377 35.785 9.78913 35.7942C12.0466 35.9167 12.7116 35.9167 18.4166 35.9167C24.1216 35.9167 24.7866 35.9167 27.0441 35.7942C28.3956 35.785 29.7346 35.5362 30.9991 35.0592C31.9277 34.7143 32.7698 34.1708 33.4666 33.4667C34.1664 32.7732 34.7094 31.9378 35.0591 31.0167C35.5356 29.746 35.7844 28.4013 35.7941 27.0442C35.9166 24.7867 35.9166 24.1217 35.9166 18.4167C35.9166 12.7117 35.9166 12.0467 35.7941 9.78925V9.78925ZM31.3491 23.7892C31.293 24.8692 31.0625 25.9329 30.6666 26.9392C30.3269 27.7787 29.8218 28.5413 29.1815 29.1816C28.5411 29.822 27.7786 30.327 26.9391 30.6667C25.9233 31.0405 24.8536 31.2474 23.7716 31.2792H13.0616C11.9797 31.2474 10.91 31.0405 9.89413 30.6667C9.02631 30.3443 8.24261 29.8298 7.60163 29.1617C6.96754 28.5339 6.47785 27.7755 6.16663 26.9392C5.79135 25.9245 5.59019 24.8536 5.57163 23.7717V13.0617C5.59019 11.9799 5.79135 10.909 6.16663 9.89425C6.48912 9.02643 7.00361 8.24273 7.67163 7.60175C8.30221 6.97109 9.05984 6.48191 9.89413 6.16675C10.91 5.79296 11.9797 5.58612 13.0616 5.55425H23.7716C24.8536 5.58612 25.9233 5.79296 26.9391 6.16675C27.8069 6.48924 28.5906 7.00373 29.2316 7.67175C29.8657 8.29956 30.3554 9.05798 30.6666 9.89425C31.0404 10.9101 31.2473 11.9798 31.2791 13.0617V18.4167C31.2791 22.0217 31.4016 22.3892 31.3491 23.7717V23.7892ZM28.5491 10.7692C28.3408 10.204 28.0123 9.69062 27.5863 9.26462C27.1603 8.83862 26.6469 8.51011 26.0816 8.30175C25.3055 8.0327 24.488 7.90238 23.6666 7.91675H13.1666C12.3411 7.92482 11.5235 8.07886 10.7516 8.37175C10.195 8.57065 9.68709 8.88574 9.26165 9.2961C8.83621 9.70645 8.50298 10.2027 8.28413 10.7517C8.02999 11.5311 7.90583 12.347 7.91663 13.1667V23.6667C7.93398 24.4913 8.08772 25.3074 8.37163 26.0817C8.57999 26.647 8.9085 27.1604 9.3345 27.5864C9.7605 28.0124 10.2738 28.3409 10.8391 28.5492C11.5858 28.8238 12.3715 28.9774 13.1666 29.0042H23.6666C24.4922 28.9962 25.3098 28.8421 26.0816 28.5492C26.6469 28.3409 27.1603 28.0124 27.5863 27.5864C28.0123 27.1604 28.3408 26.647 28.5491 26.0817C28.842 25.3099 28.9961 24.4923 29.0041 23.6667V13.1667C29.0046 12.3404 28.8503 11.5213 28.5491 10.7517V10.7692ZM18.4166 25.1017C17.5396 25.1018 16.6711 24.9287 15.861 24.5925C15.051 24.2564 14.3152 23.7637 13.6958 23.1427C13.0764 22.5217 12.5857 21.7846 12.2516 20.9737C11.9176 20.1627 11.7468 19.2938 11.7491 18.4167C11.7491 17.0938 12.1416 15.8007 12.877 14.7009C13.6123 13.6012 14.6574 12.7444 15.8799 12.239C17.1025 11.7335 18.4475 11.6021 19.7448 11.8615C21.042 12.1209 22.2331 12.7593 23.1673 13.696C24.1015 14.6326 24.7368 15.8254 24.9928 17.1233C25.2488 18.4212 25.1139 19.7659 24.6052 20.9871C24.0966 22.2084 23.237 23.2512 22.1354 23.9836C21.0337 24.7161 19.7395 25.1052 18.4166 25.1017V25.1017ZM25.4166 13.0442C25.0298 13.0033 24.6718 12.8206 24.4116 12.5314C24.1514 12.2423 24.0074 11.867 24.0074 11.478C24.0074 11.089 24.1514 10.7137 24.4116 10.4245C24.6718 10.1354 25.0298 9.9527 25.4166 9.91175C25.8035 9.9527 26.1615 10.1354 26.4217 10.4245C26.6819 10.7137 26.8258 11.089 26.8258 11.478C26.8258 11.867 26.6819 12.2423 26.4217 12.5314C26.1615 12.8206 25.8035 13.0033 25.4166 13.0442Z"
+                  fill="#000"
+                />
+              </svg> </a
+            ><a
+              href="https://www.github.com/snishant011/"
+              aria-label="find me on github"
+              target="blank"
+            >
+              <svg
+                width="35"
+                height="35"
+                viewBox="0 0 35 35"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
-                  d="M16.0451 10.6893H28.8705V11.7078H17.2207V19.3727H28.1759V20.3911H17.2207V28.8064H29.0041V29.8248H16.0451V10.6893ZM30.0196 10.6893H31.3823L37.4209 19.1047L43.593 10.6892L51.9883 0L38.1957 19.9892L45.3031 29.8248H43.887L37.4209 20.8735L30.9279 29.8248H29.5386L36.6994 19.989L30.0195 10.6893H30.0196ZM45.8108 11.7078V10.6892H60.4265V11.7077H53.693V29.8246H52.5174V11.7078H45.8108V11.7078ZM0 10.6892H1.46957L21.7341 40.9845L13.3599 29.8246L1.22905 12.1365L1.17566 29.8249H0V10.6892ZM60.308 28.4988C60.0678 28.4988 59.8877 28.3131 59.8877 28.0727C59.8877 27.8325 60.0678 27.6465 60.308 27.6465C60.5511 27.6465 60.7284 27.8324 60.7284 28.0727C60.7284 28.313 60.5511 28.4988 60.308 28.4988ZM61.4632 27.3776H62.0924C62.1009 27.718 62.3496 27.9469 62.7157 27.9469C63.1246 27.9469 63.3562 27.7009 63.3562 27.2403V24.3226H63.9968V27.2431C63.9968 28.0727 63.5164 28.5505 62.7214 28.5505C61.975 28.5505 61.4632 28.087 61.4632 27.3775V27.3776ZM64.8345 27.3405H65.4694C65.5237 27.7323 65.9069 27.9811 66.4588 27.9811C66.9735 27.9811 67.3509 27.7151 67.3509 27.349C67.3509 27.0344 67.1107 26.8456 66.5646 26.7169L66.0326 26.5882C65.2862 26.4136 64.9461 26.0532 64.9461 25.4468C64.9461 24.7117 65.5466 24.2225 66.4473 24.2225C67.2851 24.2225 67.8971 24.7116 67.9343 25.4067H67.3108C67.2508 25.0263 66.919 24.7888 66.4387 24.7888C65.9326 24.7888 65.5953 25.032 65.5953 25.4038C65.5953 25.6984 65.8124 25.8673 66.3501 25.9931L66.8047 26.1047C67.6511 26.3021 68 26.6454 68 27.2661C68 28.0555 67.3881 28.5505 66.4102 28.5505C65.4952 28.5505 64.8802 28.0784 64.8345 27.3404V27.3405Z" />
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M17.5 0C7.83125 0 0 7.83125 0 17.5C0 25.2437 5.00938 31.7844 11.9656 34.1031C12.8406 34.2562 13.1687 33.7312 13.1687 33.2719C13.1687 32.8562 13.1469 31.4781 13.1469 30.0125C8.75 30.8219 7.6125 28.9406 7.2625 27.9562C7.06563 27.4531 6.2125 25.9 5.46875 25.4844C4.85625 25.1562 3.98125 24.3469 5.44687 24.325C6.825 24.3031 7.80938 25.5937 8.1375 26.1187C9.7125 28.7656 12.2281 28.0219 13.2344 27.5625C13.3875 26.425 13.8469 25.6594 14.35 25.2219C10.4563 24.7844 6.3875 23.275 6.3875 16.5812C6.3875 14.6781 7.06563 13.1031 8.18125 11.8781C8.00625 11.4406 7.39375 9.64687 8.35625 7.24062C8.35625 7.24062 9.82187 6.78125 13.1687 9.03437C14.5687 8.64062 16.0563 8.44375 17.5438 8.44375C19.0313 8.44375 20.5188 8.64062 21.9188 9.03437C25.2656 6.75937 26.7313 7.24062 26.7313 7.24062C27.6938 9.64687 27.0813 11.4406 26.9063 11.8781C28.0219 13.1031 28.7 14.6562 28.7 16.5812C28.7 23.2969 24.6094 24.7844 20.7156 25.2219C21.35 25.7687 21.8969 26.8187 21.8969 28.4594C21.8969 30.8 21.875 32.6812 21.875 33.2719C21.875 33.7312 22.2031 34.2781 23.0781 34.1031C26.5521 32.9302 29.5709 30.6975 31.7095 27.7191C33.8481 24.7407 34.999 21.1667 35 17.5C35 7.83125 27.1688 0 17.5 0Z"
+                  fill="#222222"
+                />
               </svg>
-              <img src="./imgs/scss.svg" alt="scss icon" />
-            </div>
-            <a href="https://coden.netlify.app" class="link_btn secondary">View Live</a>
+            </a>
+            <a aria-label="Email me" href="mailto:shresthanishant011@gmail.com">
+              <img src="./imgs/gmail.svg" alt="gmail icon" />
+            </a>
           </div>
-
-          <div class="card">
-            <h1 class="project_title">Portfolio Website</h1>
-            <p class="project_description">
-              A closed source project made for video grapher. It was a simple and good looking dark themed SPA which had
-              swipers and animation. Swiper JS was used by customizing it and framer motion was used for animating
-              routes.
-            </p>
-            <div class="tech_used">
-              <img src="./imgs/react.svg" alt="nextjs icon" />
-              <svg xmlns="http:www.w3.org/2000/svg" viewBox="0 0 14 21" role="presentation">
-                <path d="M0 0h14v7H7zm0 7h7l7 7H7v7l-7-7z" fill="currentColor"></path>
-              </svg>
-              <img src="./imgs/swiperjs.svg" alt="swiper js icon" />
-              <img src="./imgs/scss.svg" alt="scss icon" />
-            </div>
-          </div>
-          <div class="card">
-            <h1 class="project_title">Open Lottie</h1>
-            <p class="project_description">
-              Made this project, just to try out some cool looking animations.
-              Learned to use lottie files and handle the events.
-            </p>
-            <div class="tech_used">
-              <img src="./imgs/react.svg" alt="nextjs icon" />
-              <img src="./imgs/scss.svg" alt="scss icon" />
-            </div>
-            <a href="https://openlottie.netlify.app/" class="link_btn secondary">View Live</a>
-          </div>
-          <div class="card">
-            <h1 class="project_title">Vanilla Form</h1>
-            <p class="project_description">
-              I wanted to make a form validation without using any libraries.
-              Hopefully, I guess I acheived it.
-            </p>
-            <div class="tech_used">
-              <img src="./imgs/javascript.svg" alt="nextjs icon" />
-              <img src="./imgs/html5.svg" alt="html5 icon" />
-              <img src="./imgs/scss.svg" alt="scss icon" />
-            </div>
-            <a href="https://snishant011.github.io/form/" class="link_btn secondary">View Live</a>
-          </div>
-          <div class="card">
-            <h1 class="project_title">Tour Management System Admin App</h1>
-            <p class="project_description">
-              This Admin app was made as a part of my college project where I had to make a tour and travel website.
-            </p>
-            <div class="tech_used">
-              <img src="./imgs/react.svg" alt="react icon" />
-              <img src="./imgs/typescript.svg" alt="typescript icon" />
-              <img src='./imgs/mantine_ui.png' alt='mantine_ui' />
-            </div>
-            <a href="https://github.com/snishant011/TMS_Admin_App" target='_blank' class="link_btn secondary">View
-              Source</a>
-          </div>
-        </div>
-      </section>
-
-      <section class='blogs_section'>
-        <h1>Some of my writings</h1>
-        <div class="blogs_list" id='blogs_container'>
-
-        </div>
-      </section>
-
-      <section id="contact" class="contact_container">
-        <h1>Contact Me</h1>
-        <div class="icons_container">
-          <a href="https://www.facebook.com/srestn011" aria-label="find me on facebook" target="blank">
-            <img src="./imgs/facebook.svg" alt="facebook icon" />
-          </a>
-          <a href="https://www.instagram.com/srest.nishant/" aria-label="find me on instagram" target="blank">
-            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M18.4166 14.0767C17.5583 14.0767 16.7192 14.3313 16.0055 14.8082C15.2917 15.2851 14.7355 15.9629 14.407 16.7559C14.0785 17.5489 13.9926 18.4216 14.16 19.2634C14.3275 20.1053 14.7408 20.8786 15.3478 21.4856C15.9547 22.0926 16.7281 22.5059 17.5699 22.6734C18.4118 22.8408 19.2844 22.7549 20.0775 22.4264C20.8705 22.0979 21.5483 21.5416 22.0252 20.8279C22.5021 20.1142 22.7566 19.2751 22.7566 18.4167C22.7566 17.8468 22.6444 17.2825 22.4263 16.7559C22.2082 16.2293 21.8885 15.7509 21.4855 15.3479C21.0825 14.9449 20.604 14.6252 20.0775 14.4071C19.5509 14.189 18.9866 14.0767 18.4166 14.0767V14.0767ZM35.7941 9.78925C35.7849 8.43782 35.5361 7.09875 35.0591 5.83425C34.7079 4.90895 34.1644 4.06866 33.4646 3.36882C32.7647 2.66898 31.9244 2.1255 30.9991 1.77425C29.7346 1.29731 28.3956 1.04845 27.0441 1.03925C24.7866 0.916748 24.1216 0.916748 18.4166 0.916748C12.7116 0.916748 12.0466 0.916748 9.78913 1.03925C8.4377 1.04845 7.09863 1.29731 5.83413 1.77425C4.90883 2.1255 4.06854 2.66898 3.3687 3.36882C2.66886 4.06866 2.12538 4.90895 1.77413 5.83425C1.29719 7.09875 1.04833 8.43782 1.03913 9.78925C0.916626 12.0467 0.916626 12.7117 0.916626 18.4167C0.916626 24.1217 0.916626 24.7867 1.03913 27.0442C1.05796 28.4004 1.30648 29.7436 1.77413 31.0167C2.12383 31.9378 2.66685 32.7732 3.36663 33.4667C4.06346 34.1708 4.90556 34.7143 5.83413 35.0592C7.09863 35.5362 8.4377 35.785 9.78913 35.7942C12.0466 35.9167 12.7116 35.9167 18.4166 35.9167C24.1216 35.9167 24.7866 35.9167 27.0441 35.7942C28.3956 35.785 29.7346 35.5362 30.9991 35.0592C31.9277 34.7143 32.7698 34.1708 33.4666 33.4667C34.1664 32.7732 34.7094 31.9378 35.0591 31.0167C35.5356 29.746 35.7844 28.4013 35.7941 27.0442C35.9166 24.7867 35.9166 24.1217 35.9166 18.4167C35.9166 12.7117 35.9166 12.0467 35.7941 9.78925V9.78925ZM31.3491 23.7892C31.293 24.8692 31.0625 25.9329 30.6666 26.9392C30.3269 27.7787 29.8218 28.5413 29.1815 29.1816C28.5411 29.822 27.7786 30.327 26.9391 30.6667C25.9233 31.0405 24.8536 31.2474 23.7716 31.2792H13.0616C11.9797 31.2474 10.91 31.0405 9.89413 30.6667C9.02631 30.3443 8.24261 29.8298 7.60163 29.1617C6.96754 28.5339 6.47785 27.7755 6.16663 26.9392C5.79135 25.9245 5.59019 24.8536 5.57163 23.7717V13.0617C5.59019 11.9799 5.79135 10.909 6.16663 9.89425C6.48912 9.02643 7.00361 8.24273 7.67163 7.60175C8.30221 6.97109 9.05984 6.48191 9.89413 6.16675C10.91 5.79296 11.9797 5.58612 13.0616 5.55425H23.7716C24.8536 5.58612 25.9233 5.79296 26.9391 6.16675C27.8069 6.48924 28.5906 7.00373 29.2316 7.67175C29.8657 8.29956 30.3554 9.05798 30.6666 9.89425C31.0404 10.9101 31.2473 11.9798 31.2791 13.0617V18.4167C31.2791 22.0217 31.4016 22.3892 31.3491 23.7717V23.7892ZM28.5491 10.7692C28.3408 10.204 28.0123 9.69062 27.5863 9.26462C27.1603 8.83862 26.6469 8.51011 26.0816 8.30175C25.3055 8.0327 24.488 7.90238 23.6666 7.91675H13.1666C12.3411 7.92482 11.5235 8.07886 10.7516 8.37175C10.195 8.57065 9.68709 8.88574 9.26165 9.2961C8.83621 9.70645 8.50298 10.2027 8.28413 10.7517C8.02999 11.5311 7.90583 12.347 7.91663 13.1667V23.6667C7.93398 24.4913 8.08772 25.3074 8.37163 26.0817C8.57999 26.647 8.9085 27.1604 9.3345 27.5864C9.7605 28.0124 10.2738 28.3409 10.8391 28.5492C11.5858 28.8238 12.3715 28.9774 13.1666 29.0042H23.6666C24.4922 28.9962 25.3098 28.8421 26.0816 28.5492C26.6469 28.3409 27.1603 28.0124 27.5863 27.5864C28.0123 27.1604 28.3408 26.647 28.5491 26.0817C28.842 25.3099 28.9961 24.4923 29.0041 23.6667V13.1667C29.0046 12.3404 28.8503 11.5213 28.5491 10.7517V10.7692ZM18.4166 25.1017C17.5396 25.1018 16.6711 24.9287 15.861 24.5925C15.051 24.2564 14.3152 23.7637 13.6958 23.1427C13.0764 22.5217 12.5857 21.7846 12.2516 20.9737C11.9176 20.1627 11.7468 19.2938 11.7491 18.4167C11.7491 17.0938 12.1416 15.8007 12.877 14.7009C13.6123 13.6012 14.6574 12.7444 15.8799 12.239C17.1025 11.7335 18.4475 11.6021 19.7448 11.8615C21.042 12.1209 22.2331 12.7593 23.1673 13.696C24.1015 14.6326 24.7368 15.8254 24.9928 17.1233C25.2488 18.4212 25.1139 19.7659 24.6052 20.9871C24.0966 22.2084 23.237 23.2512 22.1354 23.9836C21.0337 24.7161 19.7395 25.1052 18.4166 25.1017V25.1017ZM25.4166 13.0442C25.0298 13.0033 24.6718 12.8206 24.4116 12.5314C24.1514 12.2423 24.0074 11.867 24.0074 11.478C24.0074 11.089 24.1514 10.7137 24.4116 10.4245C24.6718 10.1354 25.0298 9.9527 25.4166 9.91175C25.8035 9.9527 26.1615 10.1354 26.4217 10.4245C26.6819 10.7137 26.8258 11.089 26.8258 11.478C26.8258 11.867 26.6819 12.2423 26.4217 12.5314C26.1615 12.8206 25.8035 13.0033 25.4166 13.0442Z"
-                fill="#000" />
-            </svg> </a><a href="https://www.github.com/snishant011/" aria-label="find me on github" target="blank">
-            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M17.5 0C7.83125 0 0 7.83125 0 17.5C0 25.2437 5.00938 31.7844 11.9656 34.1031C12.8406 34.2562 13.1687 33.7312 13.1687 33.2719C13.1687 32.8562 13.1469 31.4781 13.1469 30.0125C8.75 30.8219 7.6125 28.9406 7.2625 27.9562C7.06563 27.4531 6.2125 25.9 5.46875 25.4844C4.85625 25.1562 3.98125 24.3469 5.44687 24.325C6.825 24.3031 7.80938 25.5937 8.1375 26.1187C9.7125 28.7656 12.2281 28.0219 13.2344 27.5625C13.3875 26.425 13.8469 25.6594 14.35 25.2219C10.4563 24.7844 6.3875 23.275 6.3875 16.5812C6.3875 14.6781 7.06563 13.1031 8.18125 11.8781C8.00625 11.4406 7.39375 9.64687 8.35625 7.24062C8.35625 7.24062 9.82187 6.78125 13.1687 9.03437C14.5687 8.64062 16.0563 8.44375 17.5438 8.44375C19.0313 8.44375 20.5188 8.64062 21.9188 9.03437C25.2656 6.75937 26.7313 7.24062 26.7313 7.24062C27.6938 9.64687 27.0813 11.4406 26.9063 11.8781C28.0219 13.1031 28.7 14.6562 28.7 16.5812C28.7 23.2969 24.6094 24.7844 20.7156 25.2219C21.35 25.7687 21.8969 26.8187 21.8969 28.4594C21.8969 30.8 21.875 32.6812 21.875 33.2719C21.875 33.7312 22.2031 34.2781 23.0781 34.1031C26.5521 32.9302 29.5709 30.6975 31.7095 27.7191C33.8481 24.7407 34.999 21.1667 35 17.5C35 7.83125 27.1688 0 17.5 0Z"
-                fill="#222222" />
-            </svg>
-          </a>
-          <a aria-label="Email me" href="mailto:shresthanishant011@gmail.com">
-            <img src="./imgs/gmail.svg" alt="gmail icon" />
-          </a>
-        </div>
-      </section>
-    </main>
-    <footer>
-      This website was created keeping importance of time in mind xD
-      <br />&copy; 2021 | Nishant Shrestha
-    </footer>
-  </div>
-  <script src="./main.js"></script>
-  <script src='./blogsFetcher.js'></script>
-</body>
-
+        </section>
+      </main>
+      <footer>
+        This website was created keeping importance of time in mind xD
+        <br />&copy; 2021 | Nishant Shrestha
+      </footer>
+    </div>
+    <script src="./main.js"></script>
+    <script src="./scripts/smoother.js"></script>
+    <script src="./blogsFetcher.js"></script>
+  </body>
 </html>
